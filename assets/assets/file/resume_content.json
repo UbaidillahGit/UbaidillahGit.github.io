@@ -1,8 +1,8 @@
 {
-    "about": "Hi, I'm Ubaidillah a Software Engineer that enjoy creating dynamic Products with intuitive experiences that constantly grow and improve based on User Metric",
-    "project_lifetime": "Part of 4 developers to develop MLM Web Apps and I'm take a portion to converting UI/UX design into interactive Front-end web",
-    "project_amaze": "Started a new MLM Web Apps from our client and I'm responsible to develop it's Front-end Web",
-    "project_klikbusiness": "Redesigned company merchant mobile app which results in increase perfomance alongside with new intuitive UI",
+    "about": "Hi, I'm Ubaidillah a Software Engineer with over 5 years experience that enjoy creating Digital Products with intuitive experiences that constantly grow and improve based on User Metric.",
+    "project_lifetime": "Part of 4 developers to develop MLM Web Apps and I'm take a portion to converting UI/UX design into interactive Front-End web.",
+    "project_amaze": "Similar to Lifetime Web Apps but with different flow and I'm responsible to develop it's Front-End Web.",
+    "project_klikbusiness": "Merchant MobileApps for KlikMarket E-Commerce, which is allow the Users to monitors sales, shop performance and withdraw fund.",
     "kliklabs_tech_stack": [
         "PHP",
         "CSS",
@@ -11,17 +11,17 @@
         "MySql",
         "MeteorJS"
     ],
-    "project_iuranmu": "Created platform for Muhammadiyah one of the largest Muslim community in Indonesia to allow the community members pay monthly dues to the community center",
-    "tech_stack_iuranmu": "we adpot Flutter to handle Mobile Platform and NodeJS for Backend so the communication between Apps and Server able to perform seamlessly",
-    "project_pilkada": "Used by Political Party (PKS) in Indonesia that take in charge as operational platfrom for their volunteers to report daily campaign",
-    "project_greatedu": "Provide an intuitive and easy Learning platfrom, we provide many of Free courses and materials even though paid content also available, User can subscribe for more extensive learning phase",
-    "project_swj": "Helping the citizens of West Java to have a full insight of West Java about tourism, destination, event and culinary into one platform on Mobile App, users can also make some of transactions",
-    "project_kiblatku": "Kiblatku is a voluntary app for Muslim community",
-    "project_fabulas": "SuperApp platform that provide a holistic service including Health, Clinical Aesthetic and Beauty Spa",
-    "project_awhl_magic_mirror": "An iPad version of Fabulas which are specialized operates only at Merchant Outlet",
-    "project_sam" : "Sales Mobile Assistance for PT.Garuda Food (Indonesia) a consumer good company, salespeople will use this app to monitor the merchant retail",
-    "project_kojol" : "Lead a team to build a Ride-Sharing platform similar to Gojek(Indonesia) or Grab for people of Borneo-Indonesia which at that time big players like Gojek, Grab, inDriver, Maxim is not operates yet at that region",
-    "project_warko": "Lead a team to build a Ride-Sharing platform similar to Gojek(Indonesia) or Grab for people of Borneo-Indonesia which at that time big players like Gojek, Grab, inDriver, Maxim is not operates yet at that region.\nThe redesigned of Kojol App with additional merchant integration",
-    "project_bi" : "Helping Bank Indonesia to provide an operational Mobile App for internal employees only concerning to support administrative operation",
-    "project_dib" : "Building a bidding platform that will present various category"
+    "project_iuranmu": "Building a platform for one of the largest Muslim community in Indonesia (Muhammadiyah), this app allow the community members pay monthly dues to the community center.",
+    "tech_stack_iuranmu": "we adpot Flutter to handle Mobile Platform and NodeJS for Backend so the communication between Apps and Server able to perform seamlessly.",
+    "project_pilkada": "Used by Political Party (PKS) in Indonesia, this app take in charge as operational platfrom for their volunteers to report daily campaign.",
+    "project_greatedu": "Providng an intuitive and easy Learning/Educational platfrom, GreatEdu provide many of free courses and materials even though paid content also available, User can subscribe it for more extensive learning phase.",
+    "project_swj": "Building a tourism platform for West Java, Indonesia. SWJ featured a destination tour, event, culinary and users can also make of transactions.",
+    "project_kiblatku": "Kiblatku is a voluntary app for Muslim community featured Quran, Adzan, Nearby Mosque, Waqf. Moreover the app also provide PPOB services.",
+    "project_fabulas": "SuperApp platform that featured a holistic service including Health, Clinical Aesthetic and Beauty Spa.",
+    "project_awhl_magic_mirror": "An iPad version of Fabulas which are specialized operates only at Merchant Outlet.",
+    "project_sam" : "Sales Mobile Assistance for a consumer good company (PT. Garuda Food), salespeople will use this app to monitor the merchant retail.",
+    "project_kojol" : "Lead a team to build a Ride-Sharing platform similar to Gojek(Indonesia) or Grab for people of Borneo-Indonesia which at that time big players like Gojek, Grab, inDriver, Maxim is not operates yet at that region.",
+    "project_warko": "Lead a team to build a Ride-Sharing platform similar to Gojek(Indonesia) or Grab for people of Borneo-Indonesia which at that time big players like Gojek, Grab, inDriver, Maxim is not operates yet at that region.\nThe redesigned of Kojol App with additional local merchant integration.",
+    "project_bi" : "Helping Bank Indonesia to provide Mobile App for internal employees and concerning to support administrative operation",
+    "project_dib" : "Building a bidding platform that will present various category."
 }
