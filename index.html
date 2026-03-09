@@ -1,59 +1,666 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" data-theme="dark">
 <head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
-
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
-
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
-
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
-  <base href="/">
-
-  <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
-
-  <!-- iOS meta tags & icons -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="portfolio_web">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
-
-  <title>portfolio_web</title>
-  <link rel="manifest" href="manifest.json">
-
-  <script>
-    // The value below is injected by flutter build, do not touch.
-    const serviceWorkerVersion = "507099285";
-  </script>
-  <!-- This script adds the flutter initialization JS code -->
-  <script src="flutter.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ubaidillah.dev — Senior Full Stack Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <script>
-    window.addEventListener('load', function(ev) {
-      // Download main.dart.js
-      _flutter.loader.loadEntrypoint({
-        serviceWorker: {
-          serviceWorkerVersion: serviceWorkerVersion,
-        },
-        onEntrypointLoaded: function(engineInitializer) {
-          engineInitializer.initializeEngine().then(function(appRunner) {
-            appRunner.runApp();
-          });
-        }
-      });
-    });
-  </script>
+
+<!-- ========== NAVIGATION ========== -->
+<nav class="nav">
+    <div class="nav-inner">
+        <a href="#" class="nav-logo">UBAIDILLAH<span class="dot">.</span>DEV</a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#about">About</a></li>
+            <li><a href="#stack">Stack</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-right">
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <span id="themeIcon">&#9788;</span>
+            </button>
+            <a href="#contact" class="nav-cta">Hire Me</a>
+            <button class="nav-hamburger" id="navToggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<!-- ========== HERO ========== -->
+<section class="hero" id="hero">
+    <div class="deco-lines"></div>
+    <div class="section">
+        <div class="hero-content">
+            <div class="hero-status"><span class="dot"></span> Open to Opportunities</div>
+            <h1>
+                Full Stack<br>
+                <span class="line2">Engineer</span><span class="period">.</span>
+            </h1>
+            <p class="hero-desc">6+ years building high-performance mobile and backend systems. Specializing in Flutter, Go, and real-time architectures for ride-hailing, wellness, and fintech platforms.</p>
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">&#9660; View Projects</a>
+                <a href="#contact" class="btn btn-outline">Get In Touch &rsaquo;</a>
+            </div>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <div class="hero-stat-label">Experience</div>
+                    <div class="hero-stat-value">6+yrs</div>
+                    <div class="hero-stat-meta"><span class="dot"></span> Active</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-label">Projects Shipped</div>
+                    <div class="hero-stat-value">10+</div>
+                    <div class="hero-stat-meta"><span class="dot"></span> Production</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-label">Countries</div>
+                    <div class="hero-stat-value">4</div>
+                    <div class="hero-stat-meta"><span class="dot"></span> SG, HK, ID, Global</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right side card cluster -->
+        <div>
+            <div class="hero-card">
+                <div class="hero-card-header">
+                    <div class="hero-card-label"><span class="dot"></span> Profile Status</div>
+                    <span style="font-family:var(--font-mono);font-size:11px;color:var(--text-tertiary);">&#8599;</span>
+                </div>
+                <div class="hero-card-big">Ubaidillah S.</div>
+                <div class="hero-card-sub">
+                    <div class="hero-card-sub-item">
+                        <div class="hero-card-sub-label">Primary Stack</div>
+                        <div class="hero-card-sub-value">Flutter</div>
+                    </div>
+                    <div class="hero-card-sub-item">
+                        <div class="hero-card-sub-label">Backend</div>
+                        <div class="hero-card-sub-value">Go <span class="highlight">+ Node</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== ABOUT ========== -->
+<section class="section-wrap fade-up" id="about" style="background: var(--section-alt-gradient);">
+    <div class="section">
+        <div class="section-badge section-badge--teal"><span class="dot"></span> About Me</div>
+        <div class="section-title">Result-Oriented<br><span class="muted">Engineer.</span></div>
+        <p class="section-desc">Driving digital transformation through innovative mobile and backend solutions.</p>
+
+        <div class="about-grid">
+            <div class="about-text">
+                <p>I'm a result-oriented software engineer with over 6 years of experience in mobile development, specializing in Flutter (Dart) and backend development using Go and Node.js.</p>
+                <p>Proven expertise in delivering innovative digital solutions and driving digital transformation across wellness, e-commerce, ride-sharing, and fintech sectors. Adept at leading mobile development teams, enhancing user experiences, and building complex mobile platforms.</p>
+                <p>Passionate about helping businesses grow by leveraging Digital Products, particularly full-stack Flutter mobile apps, to create impactful solutions that meet user needs and business goals.</p>
+            </div>
+
+            <div class="about-card">
+                <div class="about-card-header">
+                    <div class="about-card-title">Quick Info</div>
+                    <div class="about-card-status"><span class="dot"></span> Verified</div>
+                </div>
+                <div class="about-card-body">
+                    <div class="about-info-row">
+                        <div class="about-info-icon">&#128188;</div>
+                        <div>
+                            <div class="about-info-label">Current Role</div>
+                            <div class="about-info-value">Lead Full Stack Engineer @ Hail HK</div>
+                        </div>
+                    </div>
+                    <div class="about-info-row">
+                        <div class="about-info-icon">&#128205;</div>
+                        <div>
+                            <div class="about-info-label">Location</div>
+                            <div class="about-info-value">Surabaya, Indonesia</div>
+                        </div>
+                    </div>
+                    <div class="about-info-row">
+                        <div class="about-info-icon">&#127758;</div>
+                        <div>
+                            <div class="about-info-label">Work Style</div>
+                            <div class="about-info-value">Remote &mdash; SG, HK, ID clients</div>
+                        </div>
+                    </div>
+                    <div class="about-info-row">
+                        <div class="about-info-icon">&#127891;</div>
+                        <div>
+                            <div class="about-info-label">Education</div>
+                            <div class="about-info-value">B.Sc. Information Systems &mdash; Stikom Surabaya</div>
+                        </div>
+                    </div>
+                </div>
+                <div style="padding:14px 20px;border-top:1px solid var(--border);background:var(--bg-code);font-family:var(--font-mono);font-size:11px;color:var(--text-tertiary);line-height:1.8;">
+                    <span style="color:var(--accent);">const</span> <span style="color:var(--teal);">stack</span> = [<span style="color:var(--orange);">"Flutter"</span>, <span style="color:var(--orange);">"Go"</span>, <span style="color:var(--orange);">"Node"</span>];<br>
+                    <span style="color:var(--accent);">const</span> <span style="color:var(--teal);">passion</span> = <span style="color:var(--orange);">"building things that matter"</span>;
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== TECH STACK ========== -->
+<section class="section-wrap fade-up" id="stack">
+    <div class="deco-lines"></div>
+    <div class="section">
+        <div class="section-badge section-badge--accent"><span class="dot"></span> Tech Stack</div>
+        <div class="section-title">Tools &amp; Technologies<br><span class="muted">I Ship With.</span></div>
+        <p class="section-desc">Production-grade technologies powering mobile and backend systems.</p>
+
+        <div class="stack-grid">
+            <div class="stack-card">
+                <div class="stack-card-header">
+                    <div style="display:flex;align-items:center;gap:10px;">
+                        <div class="stack-card-icon" style="background:rgba(2,86,155,0.12);color:#38BDF8;">&#9670;</div>
+                        <span class="stack-card-name">Flutter / Dart</span>
+                    </div>
+                    <span class="stack-card-count">7 tools</span>
+                </div>
+                <div class="stack-tags">
+                    <span class="stack-tag">BLoC</span>
+                    <span class="stack-tag">Riverpod</span>
+                    <span class="stack-tag">Clean Arch</span>
+                    <span class="stack-tag">DDD</span>
+                    <span class="stack-tag">Freezed</span>
+                    <span class="stack-tag">Auto Route</span>
+                    <span class="stack-tag">WebSocket</span>
+                </div>
+            </div>
+            <div class="stack-card">
+                <div class="stack-card-header">
+                    <div style="display:flex;align-items:center;gap:10px;">
+                        <div class="stack-card-icon" style="background:rgba(0,173,216,0.12);color:#2DD4BF;">&#9881;</div>
+                        <span class="stack-card-name">Go (Golang)</span>
+                    </div>
+                    <span class="stack-card-count">6 tools</span>
+                </div>
+                <div class="stack-tags">
+                    <span class="stack-tag">Gin</span>
+                    <span class="stack-tag">gRPC</span>
+                    <span class="stack-tag">Redis</span>
+                    <span class="stack-tag">OpenAPI</span>
+                    <span class="stack-tag">WebSocket</span>
+                    <span class="stack-tag">Geospatial</span>
+                </div>
+            </div>
+            <div class="stack-card">
+                <div class="stack-card-header">
+                    <div style="display:flex;align-items:center;gap:10px;">
+                        <div class="stack-card-icon" style="background:rgba(51,153,51,0.12);color:#22C55E;">&#9729;</div>
+                        <span class="stack-card-name">Node.js / Backend</span>
+                    </div>
+                    <span class="stack-card-count">5 tools</span>
+                </div>
+                <div class="stack-tags">
+                    <span class="stack-tag">Express</span>
+                    <span class="stack-tag">Socket.IO</span>
+                    <span class="stack-tag">Firebase Functions</span>
+                    <span class="stack-tag">FastAPI</span>
+                    <span class="stack-tag">PM2</span>
+                </div>
+            </div>
+            <div class="stack-card">
+                <div class="stack-card-header">
+                    <div style="display:flex;align-items:center;gap:10px;">
+                        <div class="stack-card-icon" style="background:rgba(68,121,161,0.12);color:#38BDF8;">&#128451;</div>
+                        <span class="stack-card-name">Databases</span>
+                    </div>
+                    <span class="stack-card-count">6 tools</span>
+                </div>
+                <div class="stack-tags">
+                    <span class="stack-tag">PostgreSQL</span>
+                    <span class="stack-tag">MySQL</span>
+                    <span class="stack-tag">MongoDB</span>
+                    <span class="stack-tag">Firestore</span>
+                    <span class="stack-tag">SQLite</span>
+                    <span class="stack-tag">Hive</span>
+                </div>
+            </div>
+            <div class="stack-card">
+                <div class="stack-card-header">
+                    <div style="display:flex;align-items:center;gap:10px;">
+                        <div class="stack-card-icon" style="background:rgba(249,115,22,0.12);color:#F97316;">&#9889;</div>
+                        <span class="stack-card-name">Cloud &amp; DevOps</span>
+                    </div>
+                    <span class="stack-card-count">5 tools</span>
+                </div>
+                <div class="stack-tags">
+                    <span class="stack-tag">AWS</span>
+                    <span class="stack-tag">Firebase</span>
+                    <span class="stack-tag">CodeMagic CI/CD</span>
+                    <span class="stack-tag">Git</span>
+                    <span class="stack-tag">Vercel</span>
+                </div>
+            </div>
+            <div class="stack-card">
+                <div class="stack-card-header">
+                    <div style="display:flex;align-items:center;gap:10px;">
+                        <div class="stack-card-icon" style="background:rgba(167,139,250,0.12);color:#A78BFA;">&#128179;</div>
+                        <span class="stack-card-name">Payments &amp; APIs</span>
+                    </div>
+                    <span class="stack-card-count">6 tools</span>
+                </div>
+                <div class="stack-tags">
+                    <span class="stack-tag">Stripe</span>
+                    <span class="stack-tag">Midtrans</span>
+                    <span class="stack-tag">QRIS</span>
+                    <span class="stack-tag">gRPC / Protobuf</span>
+                    <span class="stack-tag">REST</span>
+                    <span class="stack-tag">OpenAPI</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== EXPERIENCE ========== -->
+<section class="section-wrap fade-up" id="experience" style="background: var(--section-alt-gradient);">
+    <div class="section">
+        <div class="section-badge section-badge--green"><span class="dot"></span> Work Experience</div>
+        <div class="section-title">Where I've<br><span class="muted">Contributed.</span></div>
+
+        <div class="timeline">
+            <div class="timeline-item current">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date-col">
+                    <div class="timeline-date">Mar 2025 &mdash;<br>Present</div>
+                    <div class="timeline-current"><span class="dot"></span> Current</div>
+                </div>
+                <div>
+                    <div class="timeline-role">Lead Full Stack Engineer</div>
+                    <div class="timeline-company">Hail HK &mdash; Ride-Hailing Platform</div>
+                    <div class="timeline-location">Remote, Hong Kong SAR</div>
+                    <p class="timeline-desc">Hail is a home-grown ride-hailing app designed around Hong Kong's streets, tunnels, and traffic. Transparent fares, local drivers, and a better deal for riders and drivers alike.</p>
+                    <ul class="timeline-highlights">
+                        <li>Architectured high-concurrency backend in Go + Flutter mono-repo for Passenger &amp; Driver apps</li>
+                        <li>Reduced integration errors by 90% via contract-first OpenAPI/Swagger workflow</li>
+                        <li>Achieved sub-second ride matching with Redis geospatial indexing and WebSockets</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item current">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date-col">
+                    <div class="timeline-date">Jul 2022 &mdash;<br>Present</div>
+                    <div class="timeline-current"><span class="dot"></span> Current</div>
+                </div>
+                <div>
+                    <div class="timeline-role">Lead Mobile Engineer</div>
+                    <div class="timeline-company">A Wellness Holdings Pte. Ltd (AWHL)</div>
+                    <div class="timeline-location">Remote, Singapore</div>
+                    <p class="timeline-desc">Singapore-based investment holding company managing health brands including NATRAHEA, HAACH, and GuoTai TCM.</p>
+                    <ul class="timeline-highlights">
+                        <li>Spearheaded digital transformation for nationwide wellness subsidiaries, boosting engagement by 20%</li>
+                        <li>Launched flagship MagicMirror &amp; Fabulas apps with AI skin analysis &amp; personalized wellness booking</li>
+                        <li>Integrated Stripe payments &amp; CodeMagic CI/CD, reducing deployment time by 30%</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date-col">
+                    <div class="timeline-date">Apr 2023 &mdash;<br>Oct 2024</div>
+                </div>
+                <div>
+                    <div class="timeline-role">Lead Mobile Engineer</div>
+                    <div class="timeline-company">DIB Bidding Platform</div>
+                    <div class="timeline-location">Remote, Singapore</div>
+                    <p class="timeline-desc">Singapore-based bidding platform with a unique minimum bid system.</p>
+                    <ul class="timeline-highlights">
+                        <li>Built reverse auction platform with minimum unique bid system</li>
+                        <li>Serverless backend with Firebase Cloud Functions following DDD principles</li>
+                        <li>Integrated Stripe for wallet top-ups and auction participation</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date-col">
+                    <div class="timeline-date">Sep 2021 &mdash;<br>Sep 2022</div>
+                </div>
+                <div>
+                    <div class="timeline-role">Mobile Engineer</div>
+                    <div class="timeline-company">Modernesia Teknologi</div>
+                    <div class="timeline-location">Jakarta, Indonesia</div>
+                    <p class="timeline-desc">Software house delivering custom digital solutions for enterprise clients across Indonesia.</p>
+                    <ul class="timeline-highlights">
+                        <li>Delivered Iuran Muhammadiyah financial platform for Indonesia's largest Muslim organization</li>
+                        <li>Built GreatEdu educational platform with scalable Provider-based state management</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date-col">
+                    <div class="timeline-date">Nov 2020 &mdash;<br>Aug 2021</div>
+                </div>
+                <div>
+                    <div class="timeline-role">Lead Full Stack Engineer</div>
+                    <div class="timeline-company">Warko &mdash; Ride-Sharing Platform</div>
+                    <div class="timeline-location">Jakarta, Indonesia</div>
+                    <p class="timeline-desc">Ride-sharing platform featuring Customer, Driver, and Merchant apps with a real-time fare negotiation system between customers and drivers.</p>
+                    <ul class="timeline-highlights">
+                        <li>Led team to deliver 3 mobile apps (Customer, Driver, Merchant) with fare negotiation</li>
+                        <li>Engineered real-time negotiation engine using gRPC and Socket.IO</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date-col">
+                    <div class="timeline-date">Nov 2018 &mdash;<br>Sep 2021</div>
+                </div>
+                <div>
+                    <div class="timeline-role">Software Engineer</div>
+                    <div class="timeline-company">Kliklabs Indo Kreasi</div>
+                    <div class="timeline-location">Surabaya, Indonesia</div>
+                    <p class="timeline-desc">Software house specializing in mobile and web solutions for SME and enterprise clients.</p>
+                    <ul class="timeline-highlights">
+                        <li>Pioneered transition from Android WebView to Flutter, establishing mobile dev standard</li>
+                        <li>Built KlikBusiness merchant dashboard with real-time sales monitoring via gRPC</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== PROJECTS ========== -->
+<section class="section-wrap fade-up" id="projects">
+    <div class="deco-lines"></div>
+    <div class="section">
+        <div class="section-badge section-badge--orange"><span class="dot"></span> Featured Projects</div>
+        <div class="section-title">What I've<br><span class="muted">Built.</span></div>
+        <p class="section-desc">Selected projects showcasing mobile, backend, and full-stack capabilities.</p>
+
+        <div class="projects-grid">
+            <!-- HAIL HK — Featured / Most Proud -->
+            <div class="project-card" style="border-color: var(--border-hover); box-shadow: var(--shadow-glow);">
+                <div class="project-img">
+                    <div class="project-img-placeholder">
+                        <div class="icon">&#128661;</div>Hail HK
+                    </div>
+                    <!-- Replace: <img src="hailhk.png" alt="Hail HK"> -->
+                </div>
+                <div class="project-body">
+                    <div class="project-body-header">
+                        <div class="project-title">Hail HK</div>
+                        <span class="section-badge section-badge--green" style="margin:0;padding:3px 10px;font-size:9px;">
+                            <span class="dot"></span> Latest
+                        </span>
+                    </div>
+                    <div class="project-company">Hail &mdash; Hong Kong SAR</div>
+                    <p class="project-desc">Home-grown ride-hailing app designed around Hong Kong's streets, tunnels, and traffic. Transparent fares, local drivers, and a better deal for riders and drivers alike. Built Passenger &amp; Driver apps with real-time ride matching.</p>
+                    <div class="project-stack">
+                        <span class="project-stack-tag">Flutter</span>
+                        <span class="project-stack-tag">Go</span>
+                        <span class="project-stack-tag">Redis</span>
+                        <span class="project-stack-tag">WebSocket</span>
+                        <span class="project-stack-tag">OpenAPI</span>
+                        <span class="project-stack-tag">Geospatial</span>
+                    </div>
+                    <div class="project-links-grouped">
+                        <div class="link-row">
+                            <span class="link-row-label">Web</span>
+                            <a href="https://hailhk.com" target="_blank">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                                hailhk.com
+                            </a>
+                        </div>
+                        <div class="link-row">
+                            <span class="link-row-label">Rider</span>
+                            <a href="https://apps.apple.com/id/app/hail-ride-hailing/id6756063996" target="_blank">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                                iOS
+                            </a>
+                            <a href="https://play.google.com/store/apps/details?id=app.hailhk.user" target="_blank">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.48L14.05 12.6 3.18.72c-.3.28-.48.67-.48 1.12v20.52c0 .45.18.84.48 1.12zm1.83 1.3l12.56-7.04-2.82-2.83L5.01 24.78zm12.56-16.52L5.01-.78l7.74 9.87 2.82-2.83zM21.1 11.12L18.1 9.4l-3.1 3.2 3.1 3.2 3-1.72c.58-.33.58-1.14 0-1.46v-.5z"/></svg>
+                                Android
+                            </a>
+                        </div>
+                        <div class="link-row">
+                            <span class="link-row-label">Driver</span>
+                            <a href="https://apps.apple.com/id/app/hail-driver-drive-earn/id6756064368" target="_blank">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                                iOS
+                            </a>
+                            <a href="https://play.google.com/store/apps/details?id=app.hailhk.driver" target="_blank">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.48L14.05 12.6 3.18.72c-.3.28-.48.67-.48 1.12v20.52c0 .45.18.84.48 1.12zm1.83 1.3l12.56-7.04-2.82-2.83L5.01 24.78zm12.56-16.52L5.01-.78l7.74 9.87 2.82-2.83zM21.1 11.12L18.1 9.4l-3.1 3.2 3.1 3.2 3-1.72c.58-.33.58-1.14 0-1.46v-.5z"/></svg>
+                                Android
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AWHL MagicMirror -->
+            <div class="project-card">
+                <div class="project-img">
+                    <div class="project-img-placeholder">
+                        <div class="icon">&#129514;</div>AWHL MagicMirror
+                    </div>
+                </div>
+                <div class="project-body">
+                    <div class="project-body-header">
+                        <div class="project-title">AWHL MagicMirror</div>
+                    </div>
+                    <div class="project-company">A Wellness Holdings &mdash; Singapore</div>
+                    <p class="project-desc">AI-powered skin analysis app with personalized wellness booking for outlets across Singapore. Features AI face scanning, appointment booking, and in-app credits.</p>
+                    <div class="project-stack">
+                        <span class="project-stack-tag">Flutter</span>
+                        <span class="project-stack-tag">BLoC</span>
+                        <span class="project-stack-tag">Stripe</span>
+                        <span class="project-stack-tag">Firebase</span>
+                        <span class="project-stack-tag">Socket.IO</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://www.awhl.com.sg" target="_blank">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                            Website
+                        </a>
+                        <a href="https://apps.apple.com/id/app/awhl-magic-mirror/id6469525523" target="_blank">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                            App Store
+                        </a>
+                        <a href="https://play.google.com/store/apps/details?id=com.awhl.tablet" target="_blank">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.48L14.05 12.6 3.18.72c-.3.28-.48.67-.48 1.12v20.52c0 .45.18.84.48 1.12zm1.83 1.3l12.56-7.04-2.82-2.83L5.01 24.78zm12.56-16.52L5.01-.78l7.74 9.87 2.82-2.83zM21.1 11.12L18.1 9.4l-3.1 3.2 3.1 3.2 3-1.72c.58-.33.58-1.14 0-1.46v-.5z"/></svg>
+                            Play Store
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img">
+                    <div class="project-img-placeholder">
+                        <div class="icon">&#128134;</div>Fabulas
+                    </div>
+                </div>
+                <div class="project-body">
+                    <div class="project-title">Fabulas</div>
+                    <div class="project-company">A Wellness Holdings &mdash; Singapore</div>
+                    <p class="project-desc">Personalized wellness booking app with treatment marketplace, in-app credits, top-up bonuses, and healthy lifestyle articles.</p>
+                    <div class="project-stack">
+                        <span class="project-stack-tag">Flutter</span>
+                        <span class="project-stack-tag">BLoC</span>
+                        <span class="project-stack-tag">Stripe</span>
+                        <span class="project-stack-tag">Firebase</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img">
+                    <div class="project-img-placeholder">
+                        <div class="icon">&#127942;</div>33Club
+                    </div>
+                </div>
+                <div class="project-body">
+                    <div class="project-title">33Club</div>
+                    <div class="project-company">A Wellness Holdings &mdash; Singapore</div>
+                    <p class="project-desc">Private members-only community app for founders, CEOs, entrepreneurs, and investors. Features event booking and AI-powered concierge (Luminaire).</p>
+                    <div class="project-stack">
+                        <span class="project-stack-tag">Flutter</span>
+                        <span class="project-stack-tag">Firebase</span>
+                        <span class="project-stack-tag">AI Chat</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://33club.sg" target="_blank">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                            Website
+                        </a>
+                        <a href="https://apps.apple.com/id/app/33club/id6449238281" target="_blank">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                            App Store
+                        </a>
+                        <a href="https://play.google.com/store/apps/details?id=com.awhl.club33" target="_blank">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.48L14.05 12.6 3.18.72c-.3.28-.48.67-.48 1.12v20.52c0 .45.18.84.48 1.12zm1.83 1.3l12.56-7.04-2.82-2.83L5.01 24.78zm12.56-16.52L5.01-.78l7.74 9.87 2.82-2.83zM21.1 11.12L18.1 9.4l-3.1 3.2 3.1 3.2 3-1.72c.58-.33.58-1.14 0-1.46v-.5z"/></svg>
+                            Play Store
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img">
+                    <div class="project-img-placeholder">
+                        <div class="icon">&#128176;</div>DIB Bidding
+                    </div>
+                </div>
+                <div class="project-body">
+                    <div class="project-title">DIB Bidding App</div>
+                    <div class="project-company">DIB &mdash; Singapore</div>
+                    <p class="project-desc">Reverse auction platform where winners are determined by the minimum unique bid. Features wallet system, bid history, and real-time auctions.</p>
+                    <div class="project-stack">
+                        <span class="project-stack-tag">Flutter</span>
+                        <span class="project-stack-tag">BLoC</span>
+                        <span class="project-stack-tag">Firebase Functions</span>
+                        <span class="project-stack-tag">Stripe</span>
+                        <span class="project-stack-tag">DDD</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://dibdig.com" target="_blank">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                            Website
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img">
+                    <div class="project-img-placeholder">
+                        <div class="icon">&#128663;</div>Warko
+                    </div>
+                </div>
+                <div class="project-body">
+                    <div class="project-title">Warko Ride-Sharing</div>
+                    <div class="project-company">Warko &mdash; Jakarta, Indonesia</div>
+                    <p class="project-desc">Comprehensive ride-sharing platform with Customer, Driver, and Merchant apps. Standout: real-time fare negotiation between customers and drivers.</p>
+                    <div class="project-stack">
+                        <span class="project-stack-tag">Flutter</span>
+                        <span class="project-stack-tag">Node.js</span>
+                        <span class="project-stack-tag">MongoDB</span>
+                        <span class="project-stack-tag">gRPC</span>
+                        <span class="project-stack-tag">Socket.IO</span>
+                        <span class="project-stack-tag">Google Maps</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img">
+                    <div class="project-img-placeholder">
+                        <div class="icon">&#127970;</div>Beta Maluku
+                    </div>
+                </div>
+                <div class="project-body">
+                    <div class="project-title">Beta Maluku</div>
+                    <div class="project-company">Central Bank of Indonesia</div>
+                    <p class="project-desc">Internal operations app for Bank Indonesia Maluku. Features leadership agendas, document numbering, e-disposition, and performance evaluation.</p>
+                    <div class="project-stack">
+                        <span class="project-stack-tag">Flutter</span>
+                        <span class="project-stack-tag">BLoC</span>
+                        <span class="project-stack-tag">Clean Architecture</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== HACKATHON ========== -->
+<section class="section-wrap fade-up" id="hackathon" style="background: var(--section-alt-gradient);">
+    <div class="section">
+        <div class="section-badge section-badge--purple"><span class="dot"></span> Hackathon</div>
+        <div class="section-title">Competition &amp;<br><span class="muted">Events.</span></div>
+
+        <div class="hackathon-card">
+            <div class="hackathon-card-header">
+                <div class="hackathon-card-title">HackJakarta 2024</div>
+                <div class="hackathon-card-live"><span class="dot"></span> Completed</div>
+            </div>
+            <div class="hackathon-card-body">
+                <div class="hackathon-info">
+                    <div class="hackathon-name">GrabHealthEats</div>
+                    <div class="hackathon-event">Global Hackathon by AngleHack &mdash; Grab Indonesia HQ</div>
+                    <p class="hackathon-desc">Reimagining GrabFood with Generative AI. Users choose food options tailored to dietary preferences and health concerns &mdash; vegan, halal, allergy-conscious, or managing chronic conditions.</p>
+                    <div class="project-stack">
+                        <span class="project-stack-tag">Google Gemini</span>
+                        <span class="project-stack-tag">Flutter</span>
+                        <span class="project-stack-tag">Python</span>
+                        <span class="project-stack-tag">Firebase</span>
+                        <span class="project-stack-tag">Vercel</span>
+                    </div>
+                </div>
+                <div class="hackathon-images" style="grid-template-columns:1fr;gap:0;">
+                    <img src="assets/grabhealtheats.jpeg" alt="GrabHealthEats — HackJakarta 2024" style="width:100%;height:100%;object-fit:cover;min-height:260px;">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== CONTACT ========== -->
+<section class="section-wrap fade-up" id="contact">
+    <div class="section contact-center">
+        <div class="section-badge section-badge--teal" style="display:inline-flex;"><span class="dot"></span> Get In Touch</div>
+        <div class="section-title">Let's Work<br><span class="muted">Together.</span></div>
+        <p class="section-desc" style="margin:0 auto 48px;">Open to collaborations, and interesting projects. </br>Reach out anytime.</p>
+
+        <div class="contact-grid">
+            <a href="mailto:ubaidillah.mac@gmail.com?subject=Hello%20Ubaidillah%20-%20Let's%20Work%20Together&body=Hi%20Ubaidillah,%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20potential%20project%20or%20collaboration.%0A%0ABest%20regards," class="contact-link"><span class="icon">&#9993;</span> ubaidillah.mac@gmail.com</a>
+            <a href="https://github.com/UbaidillahGit" class="contact-link" target="_blank"><span class="icon">&#128187;</span> GitHub</a>
+            <a href="https://ubaidillahgit.github.io" class="contact-link" target="_blank"><span class="icon">&#127760;</span> GitHub Pages</a>
+            <a href="https://medium.com/@ubaidillah.dev" class="contact-link" target="_blank"><span class="icon">&#9997;</span> Medium</a>
+            <a href="https://linkedin.com/in/ubaidillah-sriyudi" class="contact-link" target="_blank"><span class="icon">&#128101;</span> LinkedIn</a>
+            <!-- <a href="https://wa.me/6281809350305" class="contact-link" target="_blank"><span class="icon">&#128222;</span> WhatsApp</a> -->
+        </div>
+    </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+    <span class="dot">&#9632;</span> &copy; 2026 Muhammad Ubaidillah Sriyudi. Built with care.
+</footer>
+
+<!-- ========== SCRIPTS ========== -->
+<script src="js/main.js"></script>
+
 </body>
 </html>
